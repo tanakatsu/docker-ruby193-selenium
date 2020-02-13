@@ -1,0 +1,10 @@
+version: '3'
+services:
+  ruby_selenium:
+    build: .
+    image: ruby_selenium
+    container_name: ruby_selenium
+    working_dir: /root/src
+    volumes:
+      - ./src/:/root/src/
+    tty: true
